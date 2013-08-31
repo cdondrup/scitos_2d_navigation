@@ -19,7 +19,7 @@ DWAPlannerROS:
   #xy_goal_tolerance: 0.3  #default:0.1 -> with this value the robot sometimes has troubles achieving the goal, due to low tolerance
   #New values
   yaw_goal_tolerance: 0.79 #Set to 45 degrees
-  xy_goal_tolerance: 1.0   #Set to 1 meter
+  xy_goal_tolerance: 0.7   #Set to 1.4 meter
   
   # if the robot ever reaches the goal xy location it will simply rotate in place, even if it ends up outside the goal tolerance while it is doing so.
   latch_xy_goal_tolerance: true
