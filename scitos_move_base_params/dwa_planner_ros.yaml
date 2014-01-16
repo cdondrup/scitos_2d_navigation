@@ -12,6 +12,7 @@ DWAPlannerROS:
   max_vel_y: 0.0
   max_rot_vel: 1.0
   min_rot_vel: 0.4
+  min_trans_vel: 0.05
 
   #Goal tolerances
   #Default values:
@@ -23,9 +24,13 @@ DWAPlannerROS:
   
   # if the robot ever reaches the goal xy location it will simply rotate in place, even if it ends up outside the goal tolerance while it is doing so.
   latch_xy_goal_tolerance: true
+  penalize_negative_x: false
  
 
-  sim_time: 1.7
+  sim_time: 1.0
+  sim_granularity: 0.025
+
+  occdist_scale: 0.00
   
 
 #cost =  path_distance_bias * (distance to path from the endpoint of the trajectory in meters)  + goal_distance_bias * (distance to local goal from the endpoint of the trajectory in meters)  + occdist_scale * (maximum obstacle cost along the trajectory in obstacle cost (0-254))
