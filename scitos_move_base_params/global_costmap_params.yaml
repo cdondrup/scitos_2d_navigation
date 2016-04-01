@@ -8,4 +8,5 @@ global_costmap:
     - {name: no_go_layer, type: "costmap_2d::StaticLayer"}
     - {name: obstacle_layer, type: "costmap_2d::VoxelLayer"}
     - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+    #- {name: custom_map_layer, type: "costmap_2d::StaticLayer"}
     
